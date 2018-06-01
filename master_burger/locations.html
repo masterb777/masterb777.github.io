@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Locations</title>
+    
+    
+    <style>
+        *
+        {
+            margin:0;
+            padding:0;
+        }
+        #map
+        {
+            height:500px;
+            width:100%;
+        }
+    </style>
+    </head>
+    
+    <body>
+        
+        
+        <div id="map"></div>
+        
+        <script>
+            function initMap() {
+                var location = {lat: 34.032370, lng: -118.334231};
+                var map = new google.maps.Map(document.getElementById("map"),{
+                    zoom: 4,
+                    center: location
+                });
+            }
+        </script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzasSyBYzXj5wF4L6mChyyc5xwfb2QT1QEZ9VN8=initMap"></script>
+        
+        <a href="https://www.google.com/search?safe=strict&rlz=1C1JZAP_enUS756US756&q=all+master+burger+locations&npsic=0&rflfq=1&rlha=0&rllag=34017718,-118321713,1993&tbm=lcl&ved=0ahUKEwj01oyjgp_bAhXTFzQIHVsuC3sQtgMIKA&tbs=lrf:!2m1!1e2!2m1!1e1!2m1!1e3!3sIAE,lf:1,lf_ui:9&rldoc=1#rlfi=hd:;si:;mv:!1m3!1d24804.470311150115!2d-118.3217133!3d34.011464499999995!2m3!1f0!2f0!3f0!3m2!1i164!2i360!4f13.1;tbs:lrf:!2m1!1e2!2m1!1e1!2m1!1e3!3sIAE,lf:1,lf_ui:9"class="btn btn-half">LOCATIONS</a></a>
+        
+    </body>
+</html>
